@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+int n, x, k;
+unsigned long long int c;
+double e;
+scanf_s("%d", &n);
+for (k = 0; k <= n; k++)
+{
+e = 1;
+c = 1;
+for (x = 0; x <= k; x++)
+{
+if (k > 60)
+{
+printf("%.f ", e);
+e = e * (k - x) / (x + 1);
+}
+else
+{
+printf("%llu ", c);
+c = c * (k - x) / (x + 1);
+}
+}
+printf("\n");
+}
+}
