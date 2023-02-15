@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <locale.h>
+
+long double factorial(int n)
+{
+long double i, zxc = 1;
+for (i = 1; i <= n; i++)
+zxc *= i;
+return zxc;
+}
+int main()
+{
+int i, n, c;
+long int k;
+scanf_s("%d", &n);
+for (i = 0; i <= n; i++)
+{
+for (c = 0; c <= i; c++)
+{
+long double e = factorial(i);
+k = e / (factorial(c) * factorial(i - c));
+printf("%d ", k);
+}
+printf("\n");
+}
+}
